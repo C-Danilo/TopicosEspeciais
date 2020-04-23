@@ -56,31 +56,5 @@ public class Carro implements Serializable {
 	public void setModeloCarro(String modeloCarro) {
 		this.modeloCarro = modeloCarro;
 	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((idCarro == null) ? 0 : idCarro.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Carro other = (Carro) obj;
-		if (idCarro == null) {
-			if (other.idCarro != null)
-				return false;
-		} else if (!idCarro.equals(other.idCarro))
-			return false;
-		return true;
-	}
 	
-
 }
