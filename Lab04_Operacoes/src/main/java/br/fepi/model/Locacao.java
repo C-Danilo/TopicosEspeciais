@@ -89,29 +89,5 @@ public class Locacao implements Serializable {
 		this.carro = carro;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((idLocacao == null) ? 0 : idLocacao.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Locacao other = (Locacao) obj;
-		if (idLocacao == null) {
-			if (other.idLocacao != null)
-				return false;
-		} else if (!idLocacao.equals(other.idLocacao))
-			return false;
-		return true;
-	}	
-
+	
 }
